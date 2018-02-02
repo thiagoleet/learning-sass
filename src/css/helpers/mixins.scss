@@ -1,0 +1,19 @@
+// Mixins usados no Sass
+@mixin borda-arredondada($raio: 0.3em) {
+    -webkit-border-radius: $raio;
+    border-radius: $raio;  
+  }
+  
+  @mixin sombra-padrao {
+    box-shadow: $sombreamento;
+    -webkit-box-shadow: $sombreamento;
+    -moz-box-shadow: $sombreamento;
+    -o-box-shadow: $sombreamento;
+    -ms-box-shadow: $sombreamento;
+  }
+  
+  @mixin image-replacement {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
