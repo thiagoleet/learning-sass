@@ -65,30 +65,30 @@ header .container {
   position: relative;
 }
 
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
   top: -.5em;
   font-size: 1.2em;
   font-weight: lighter;
-}
 
-.menu-opcoes ul {
-  padding-left: 0;
-}
+  ul {
+    padding-left: 0;
+  }
 
-.menu-opcoes li {
-  display: inline-block;
-  width: 5em;
-}
+  li {
+    display: inline-block;
+    width: 5em;
+  }
 
-.menu-opcoes a {
-  color: white;
-  text-decoration: none;
-}
+  a {
+    color: white;
+    text-decoration: none;
 
-.menu-opcoes a:hover {
-  text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /** Destaque **/
@@ -99,34 +99,33 @@ header .container {
   color: white;
   height: 330px;
   padding-top: 10em;
-}
 
-.destaque p {
-  width: 30em;
-}
+  p {
+    width: 30em;
+   
+    &:first-child {
+      width: 30em;
+      font-size: 1.3em;
+      line-height: 1.1;
 
-.destaque p:first-child {
-  width: 30em;
-  font-size: 1.3em;
-  line-height: 1.1;
-}
+      &:first-line {
+        font-size: 2.2em;
+        font-weight: bold;
+      }
+    }
+  }
 
-.destaque p:first-child:first-line {
-  font-size: 2.2em;
-  font-weight: bold;
+  button {
+    margin-top: 1em;
+    background: $cor-padrao;
+    border: 0;
+    padding: .6em;
+    font-size: 1.2em;
+    @include borda-arredondada($raio-grande);
+    @include sombra-padrao;
+    font-weight: bold;
+  }
 }
-
-.destaque button {
-  margin-top: 1em;
-  background: $cor-padrao;
-  border: 0;
-  padding: .6em;
-  font-size: 1.2em;
-  @include borda-arredondada($raio-grande);
-  @include sombra-padrao;
-  font-weight: bold;
-}
-
 
 /** Sobre **/
 .sobre {
@@ -220,22 +219,22 @@ header .container {
 
 .itens-plano {
   padding-left: 1.2em;
-}
 
-.itens-plano li {
-  font-size: 1em;
-  list-style: none;
-  border-bottom: 1px solid #acacac;
-  padding: .5em;
-  width: 14.8em;
-}
+  li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: .5em;
+    width: 14.8em;
 
-.itens-plano li:last-child {
-  border: 0;
-}
+    &:last-child {
+      border: 0;
+    }
+  }
 
-.itens-plano span {
-  float: right;
+  span {
+    float: right;
+  }
 }
 
 .plano button {
