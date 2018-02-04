@@ -44,3 +44,16 @@
   .posts-antigos a:hover {
     text-decoration: underline;
   }
+
+  .menu-opcoes {
+    @media #{mq-mobile} {
+      position: static;
+      display: block;
+      text-align: center;
+      width: auto;
+
+      li {
+        margin: .4em;
+      }
+    }
+	}
