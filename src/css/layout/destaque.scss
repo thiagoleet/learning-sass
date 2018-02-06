@@ -33,8 +33,8 @@
       border: 0;
       padding: .6em;
       font-size: 1.2em;
-      @include borda-arredondada($raio-grande);
-      @extend %sombra-padrao;
+      @include border-radius($raio-grande);
+      @include box-shadow($sombreamento);
       font-weight: bold;
     }
   }

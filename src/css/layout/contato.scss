@@ -14,7 +14,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  @include borda-arredondada;
+  @include border-radius($raio);
   border: 2px solid #ccc;
 }
 
@@ -26,6 +26,6 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  @include borda-arredondada;
-  @extend %sombra-padrao;
+  @include border-radius($raio);
+  @include box-shadow($sombreamento);
 }

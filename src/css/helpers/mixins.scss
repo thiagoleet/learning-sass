@@ -11,7 +11,11 @@
 }
 
 // placeholder
-%sombra-padrao {
-  -webkit-box-shadow: $sombreamento;
-  box-shadow: $sombreamento;
-}
+// %sombra-padrao {
+//   -webkit-box-shadow: $sombreamento;
+//   box-shadow: $sombreamento;
+// }
+
+// Usando o Compass
+@import "compass/css3";
+@import "compass/utilities";
