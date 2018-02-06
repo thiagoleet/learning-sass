@@ -1,3 +1,10 @@
+// sprites
+$sprite-spacing: 5px; // alterando o espaçamento dos sprites
+@import "sprite/*.png"; // importando os sprites
+
+$plataformas-spacing: 5px; // alterando o espaçamento dos sprites
+@import "plataformas/*.png"; // importando os sprites
+
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
 
