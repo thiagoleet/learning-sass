@@ -1,3 +1,4 @@
+
 // Mixins usados no Sass
 @mixin borda-arredondada($raio: 0.3em) {
   -webkit-border-radius: $raio;
@@ -12,10 +13,17 @@
 
 // placeholder
 // %sombra-padrao {
-//   -webkit-box-shadow: $sombreamento;
-//   box-shadow: $sombreamento;
-// }
-
-// Usando o Compass
-@import "compass/css3";
-@import "compass/utilities";
+  //   -webkit-box-shadow: $sombreamento;
+  //   box-shadow: $sombreamento;
+  // }
+  
+  
+  @function multiplica-pela-fonte($multiplicador) {
+    @return round($multiplicador * $tamanho-da-fonte-padrao);
+  }
+  
+  
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Usando o Compass
+  @import "compass/css3";
+  @import "compass/utilities";
